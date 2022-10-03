@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+/* target */
+main article:target h2 {
+  color: #ff884b;
+}
+header,
+nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-color: #ff884b;
+  padding: 20px;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 2.2rem;
+}
+
+footer,
+nav {
+  background-color: #ffd384;
+  padding: 5px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+.jumbotron,
+nav a {
+  color: #fff9b0;
+  text-decoration: none;
+  padding-left: 10px;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  font-weight: bolder;
+  color: #ff884b;
+  cursor: pointer;
+}
+
+footer {
+  font-weight: 700;
+  color: white;
+}
+
+footer i {
+  color: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Quicksand, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+#content article {
+  padding: 10px;
+}
+
+h2 {
+  color: #ffd384;
+}
+
+.card {
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+aside {
+  width: 25%;
+  float: right;
+  padding-left: 20px;
+}
+
+aside section h3 {
+  color: #ffd384;
+}
+
+aside section#sosmed {
+  text-align: center;
+}
+
+aside section#sosmed i {
+  color: #ff884b;
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.fakta img {
+  filter: blur(10px);
+}
+
+.fakta img:hover {
+  filter: blur(0);
+  transition: filter 4s;
+}
+
+.top {
+  height: 40px;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile {
+  padding: 10px;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile header figure img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff9b0;
+}
+
+.profile header figure figcaption {
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+  }
+
+  article,
+  aside {
+    padding: 5px;
+  }
+} ;
